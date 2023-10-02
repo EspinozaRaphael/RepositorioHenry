@@ -14,15 +14,60 @@
 //var c = a = b;
 //console.log (c); 
 //
-function viajar (destino){
-    if(destino === "brasil"){
+function viajar(destino) {
+    // Convierte la entrada a minúsculas para ser insensible a mayúsculas y minúsculas.
+    destino = destino.toLowerCase();
+
+    // Usa una declaración switch para simplificar el código.
+    switch (destino) {
+        case "brasil":
+            console.log("Gire a la izquierda");
+            break;
+        case "argentina":
+            console.log("Gire a la derecha");
+            break;
+        default:
+            console.log("NOS PERDIMOS");
+    }
+}
+
+viajar("BRASIL");
+
+
+function viajar (destinos){
+    if(destinos === "brasil"){
         console.log("Gire a la izquierda");
 
-    }else if (destino=== "Argentina"){
+    }else if (destinos=== "Argentina"){
         console.log("Gire a la derecha");
     }else {
         console.log("NOS PERDIMOS")
     }
 }
 
-viajar("PERU")
+viajar("brasil");
+
+
+function comer (vegetales){
+    if(vegetales=== "Zanahoria"){
+        console.log("Que rico");
+
+    }else if (vegetales === "Cebolla"){
+        console.log("ÑOFI");
+
+    }else {
+        console.log("QUE CARAJOS COMES VOS ASCOO");
+    }
+
+}
+comer("Bife")
+
+
+function puedeManejar(edad) {
+    if(edad >= 18) {
+             console.log( true );
+    }else
+    console.log( false );
+  }
+  
+  puedeManejar(21);
