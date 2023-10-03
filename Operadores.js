@@ -18,3 +18,6 @@ console.log(30 / 9);
 console.log(95 % 4);
 
 //Prueba de precedencia
+
+
+

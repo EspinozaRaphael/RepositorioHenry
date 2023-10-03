@@ -71,3 +71,13 @@ function puedeManejar(edad) {
   }
   
   puedeManejar(21);
+
+
+
+  function tienenMismaLongitud(str1, str2) {
+    return str1.length === str2.length;
+ }
+ 
+ console.log(tienenMismaLongitud("hola", "adio")); // Esto imprimirá true en la consola.
+console.log(tienenMismaLongitud("gatoo", "perro")); // Esto imprimirá true en la consola.
+console.log(tienenMismaLongitud("hola", "mndo")); // Esto imprimirá false en la consola.
